@@ -1,0 +1,53 @@
+body,html{
+    margin:0;
+    padding:0;
+    height:75%;
+}
+h1{
+    background-color: pink;
+}
+.main{
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2em;
+    flex-direction: column;
+}
+.text{
+    background-color: aqua;
+    color: black;
+    padding: 10px 10px;
+    margin: 5px;
+    position: relative;
+    transform: translateX(-100%);
+    animation: moveRight 4s ease-in-out forwards;
+}
+#text-1 { animation-delay: 0.5s; animation-duration: 2s; }
+#text-2 { animation-delay: 1.0s; animation-duration: 2.5s; }
+#text-3 { animation-delay: 1.5s; animation-duration: 3s; }
+#text-4 { animation-delay: 2.0s; animation-duration: 3.5s; }
+#text-5 { animation-delay: 2.5s; animation-duration: 4s; }
+@keyframes moveRight{
+    to{
+        transform: translateX(40vw);
+    }
+}
+.a1{
+     display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+body{
+    background-image: url(https://2.bp.blogspot.com/-yTfgRw-2ge8/XOSnKhmjifI/AAAAAAAAWG8/8725aGhtSMknIW_wfIQcru6yUXkjiqvggCLcBGAs/s1600/congratulations-images-greetings-wishes-tulips-flowers.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
